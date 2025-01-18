@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="scroll-smooth">
+<head>
+    <meta name="description" content="أكاديمية أروقة مؤسسة تعليمية أزهرية متخصصة في تعليم القرآن الكريم والعلوم الشرعية والمواد الثقافية.">
+<meta name="keywords" content="أروقة, أكاديمية, تحفيظ القرآن, علوم شرعية, تعليم, أزهر, رياض الأطفال, المرحلة الابتدائية">
+<meta name="author" content="أكاديمية أروقة">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arweqa Academy</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body class="font-[Cairo]">
+    <div class=" fixed top-0 left-0 w-full z-20 bg-white dark:bg-gray-800">
+        <nav class="flex justify-between items-center w-[92%] mx-auto bg-white dark:bg-gray-800 p-2">
+            <div>
+                <img src="./images/logo2.jpg" id="logo" class="w-20" alt="اروقة">
+            </div>
+            <div class="nav-links py-3 top-[5rem] hidden md:flex md:static absolute mt-1.5 bg-white dark:bg-gray-800 min-h-fit left-0  md:w-auto w-full items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center mx-auto gap-8 md:gap-[4vw]">
+                    <li><a class="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 " href="#About">عن الأكاديمية</a></li>
+                    <li><a class="hover:text-gray-500 dark:text-white dark:hover:text-gray-300" href="#Education-stages">المراحل الدراسية</a></li>
+                    <li><a class="hover:text-gray-500 dark:text-white dark:hover:text-gray-300" href="#Gallary">الأنشطة الإجتماعبة</a></li>
+                    <li><a class="hover:text-gray-500 dark:text-white dark:hover:text-gray-300" href="#Register">التسجيل</a></li>
+                    <li><a class="hover:text-gray-500 dark:text-white dark:hover:text-gray-300" href="#Contact">التواصل</a></li>
+                    
+                </ul>
+            </div>
+            <div class="flex items-center gab-6">
+                <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+                <ion-icon name="menu" onclick="onToggleMenu(this)" class="text-3xl cursor-pointer md:hidden ms-5 dark:text-white"></ion-icon>
+            </div>
+        </nav>
+    </div>
+    <header class="custom-bg bg-center h-screen relative mt-10">
+        <div class="absolute inset-0 bg-black/90"></div>
+        <!-- المحتوى -->
+       
+        <div class="relative text-white text-center m-auto top-1/2 left-1/2 -translate-y-1/2 transform -translate-x-1/2  space-y-5">
+
+            <h1 class="text-4xl font-bold text-gray-200 dark:text-gray-500 dark:text-shadow  mb-10">أكاديمية أروقة</h1>
+
+            <div class="relative text-4xl text-gray-200 dark:text-gray-500 dark:text-shadow mx-auto font-bold overflow-hidden whitespace-nowrap w-[17ch] border-l-2 border-black animate-typing mt-5">
+                ابناؤنا مستقبلنا
+            </div>
+            <a href="#About" class="animate-bounce cursor-pointer">
+                
+                <i class="fa fa-arrow-down animate-bounce cursor-pointer px-2 py-4 border-8 rounded-full mt-20 fa-3x mx-auto overflow-hidden text-yellow-200 bg-gray-500"></i>
+
+                
+            </a>
+           
+        </div>
+    </header>
+    <section id="About" class=" bg-gray-50 dark:bg-gray-900 py-12 px-2">
+        <h2 class="text-3xl font-bold mb-5 text-center text-gray-800 dark:text-white">عن أكاديمية أروقة</h2>
+       <div class="md:flex flex-row-reverse container mt-5 mx-auto">
+
+           <div class="w-full md:relative md:top-1/2 lg:mt-20 lg:space-y-0 md:w-6/12 rounded-lg md:mr-1">
+               <img src="./images/poster.jpg" alt="عن الأكاديمية" class="shadow-lg mb-2 w-full h-auto rounded-lg">
+            <img src="./images/post.jpg" alt="w-full rounded-lg shadow-lg">
+            </div>
+            <div class=" md:w-6/12">
+                <caption class="mb-8">
+                  
+                    <p class="mt-2 mb-7 text-gray-900 dark:text-white">أكاديمية أروقة هي مؤسسة تعليمية أزهرية متخصصة في تعليم القرآن الكريم والعلوم الشرعية و المواد الثقافية  . تسعى الأكاديمية إلى توفير بيئة تعليمية ملهمة تجمع بين الإبداع والمعرفة لتعزيز مهارات الطلاب وتنمية قدراتهم وتوفير لهم كل الإمكانيات التي تجعلهم من أوائل معاهدهم. و يوجد فروع كثيرة لنا في مصر منها فرع أكتوبر وفرع الشيخ زايد وفرع المريوطية</p>
+                 </caption>
+
+        <caption class="mb-8 text-center">
+            <h2 class="text-2xl font-bold text-gray-700 dark:text-gray-200"> البرامج التعليمية في الأجازة الصيفية والشتوية</h2>
+            <ul class="mt-2 list-disc list-inside text-right">
+                <li class="mb-5 text-white"><strong class="font-extrabold text-2xl text-sky-500 dark:text-sky-900 ">تحفيظ القرآن الكريم:</strong> 
+                    <div class="container mx-auto text-center">
+                      
+                        <p class="text-lg text-black dark:text-white">أكاديمية أروقة تتميز بنهجها الفريد في تعليم وتحفيظ القرآن الكريم، حيث توفر بيئة تعليمية محفزة تجمع بين الجدية والمتعة.</p>
+                
+                        <div class=" text-right">
+                            <h3 class="font-bold dark:text-yellow-200 text-yellow-800 ">فريق الطلائع</h3>
+                            <p class="dark:text-white text-black">يتكون هذا الفريق من الطلاب الذين لم يُنهوا حفظ القرآن الكريم بعد. يتم تحديد مستوى الطلاب وتوجيههم من خلال شيخ متخصص لضمان التقدم المستمر. يتم الالتزام بحفظ القرآن الكريم بطريقة جادة ومُنظمة.</p>
+                        </div>
+                
+                        <div class=" text-right mt-4">
+                            <h3 class="font-bold dark:text-yellow-200 text-yellow-800">فريق العلماء</h3>
+                            <p class="dark:text-white text-black">يشمل هذا الفريق الطلاب الذين أكملوا حفظ القرآن الكريم. يُتاح لهم المشاركة في مسابقة "سرد القرآن"، وهي مسابقة تُجرى في نهاية كل فصل دراسي. المسابقة تشمل سرد أجزاء من القرآن الكريم مثل 15 جزءًا أو 10 أجزاء، مما يساعد في تعزيز حفظهم وتثبيت المعلومات.</p>
+                        </div>
+                
+                        <div class="text-right mt-4">
+                            <h3 class="font-bold dark:text-yellow-200 text-yellow-800">مساعدات أكاديمية أروقة في تحفيظ القرآن الكريم</h3>
+                            <ul class="list-decimal space-y-3 list-inside">
+                                <li class="dark:text-white text-black">الأكاديمية تقدم دعمًا كبيرًا لطلابها من خلال تقديم المسابقات والتحديات المستمرة التي تشجع الطلاب على الحفظ والمراجعة.</li>
+                                <li class="dark:text-white text-black">تنظيم مسابقة "سرد القرآن" في نهاية كل تيرم دراسي، حيث يتنافس الطلاب على سرد أجزاء مختلفة من القرآن الكريم.</li>
+                                <li class="dark:text-white  text-black">تقديم الجوائز والشهادات التقديرية للمتميزين في المسابقة، مما يحفز الطلاب على بذل المزيد من الجهد.</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="mb-5 text-black  dark:text-white"><strong class="font-extrabold text-2xl text-sky-500 dark:text-sky-900">العلوم الشرعية:</strong>  دورات تعليمية في الفقه، العقيدة،السيرة النبوية ، المتون ، و الحديث. </li>
+                <li class="text-right text-black  dark:text-white"><strong class="font-extrabold text-2xl text-sky-500 dark:text-sky-900">دورات تعليمية في المواد الثقافية : </strong>    <div class="text-right space-y-6">
+
+                    <p>في الإجازة، يتم تقديم دورات تعليمية في بعض العلوم مثل:</p>
+                    <ul class="list-disc list-inside">
+                        <li>الرياضيات</li>
+                        <li>النحو والصرف</li>
+                        <li>دورة في اللغة الإنجليزية</li>
+                        <li>دورة في uC Math (الرياضيات للأطفال)</li>
+                    </ul>
+                </div>
+        
+                <div class="text-right space-y-6 mt-8">
+                    <h3 class="text-3xl font-semibold dark:text-yellow-200 text-yellow-800">المسابقات والأنشطة</h3>
+                    <p>أكاديمية أروقة تنظّم العديد من المسابقات التي تساعد الطلاب على تنمية مهاراتهم العلمية والثقافية، مثل:</p>
+                    <ul class="list-disc list-inside">
+                        <li>مسابقات الأبحاث العلمية والثقافية</li>
+                        <li>المسابقات الأدبية والفكرية</li>
+                        <li>المسابقات الرياضية والترفيهية</li>
+                    </ul>
+                </div></li>
+                
+            </ul>
+        </caption>
+
+
+            </div>
+       </div>
+    </section>
+    
+    <section id="Education-stages" class="bg-gray-200 dark:bg-gray-800 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8   text-gray-800 dark:text-white">المراحل الدراسية </h2>
+            <p class="text-lg text-gray-700 mb-12 dark:text-gray-200">تقدم أكاديمية أروقة تعليمًا مميزًا يغطي جميع المراحل الدراسية من رياض الأطفال وحتى الصف الثاني الثانوي، حيث يتم التركيز على تقديم بيئة تعليمية متكاملة وداعمة لتطوير الطلاب علميًا وثقافيًا.</p>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- مرحلة رياض الأطفال -->
+                <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+                    <img src="https://www.easyunime.com/media/uploads/2020/04/14/jffdhv.webp" alt="رياض الأطفال" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-700 dark:text-gray-200">رياض الأطفال</h3>
+                    <p class="text-gray-700">توفير بيئة تعليمية آمنة ومحفزة تساعد الأطفال على تنمية مهاراتهم الإبداعية والمعرفية.</p>
+                </div>
+                <!-- المرحلة الابتدائية -->
+                <div class="bg-green-100 p-6 rounded-lg shadow-md">
+                    <img src="https://www.akhbarelyoum.dz/ar/images/1638828681.jpg" alt="المرحلة الابتدائية" class="w-full h-40 rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-green-600">المرحلة الابتدائية</h3>
+                    <p class="text-gray-700">التركيز على بناء الأساس الأكاديمي للطلاب في القراءة، الكتابة، والرياضيات مع غرس القيم الأخلاقية.</p>
+                </div>
+                <!-- المرحلة الإعدادية -->
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-md">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU8PF_1iab5KpohpZVVjmYajyWHWMM5Fj8ZQ&s" alt="المرحلة الإعدادية" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-600">المرحلة الإعدادية</h3>
+                    <p class="text-gray-700">تنمية مهارات الطلاب وتوسيع مداركهم في العلوم، الرياضيات، واللغات من خلال برامج تعليمية متميزة.</p>
+                </div>
+                <!-- المرحلة الثانوية -->
+                <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZKEWOYkTE-YSYQ0JI8bB8tH3jqU5CNHLpWenTjBmyVIcGOQIUyZgccQMLVHCenSUVco&usqp=CAU" alt="المرحلة الثانوية" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-purple-600">المرحلة الثانوية</h3>
+                    <p class="text-gray-700">إعداد الطلاب للمرحلة الجامعية من خلال منهج متقدم وبرامج تنمية القدرات الشخصية والأكاديمية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+ 
+        <section id="Gallary" class="py-12 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto">
+              <h2 class="text-3xl font-bold  text-gray-800 dark:text-white mb-6 text-center">حفلاتنا وأنشطتنا</h2>
+              <p class="text-gray-600 dark:text-white text-center mb-12">
+                اكتشف أجمل اللحظات من حفلاتنا وأنشطتنا المميزة من خلال الصور والفيديوهات.
+              </p>
+          
+              <!-- Gallery Section -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <!-- Image 1 -->
+                <div class="relative group">
+                  <img src="./images/citidal.jpg" alt="حفل 1" class="w-full h-56 object-cover rounded-lg">
+                  <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <p class="text-white text-lg font-semibold">نشاط رحلة قلعة صلاح الدين</p>
+                  </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="relative group">
+                  <img src="./images/congratolation.jpg" alt="حفل 2" class="w-full h-56 object-cover rounded-lg">
+                  <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <p class="text-white text-lg font-semibold text-center">تهنئة الطلاب بالإنجازات المختلفة</p>
+                  </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="relative group">
+                  <img src="./images/degrees.jpg" alt="حفل 3" class="w-full h-56 object-cover rounded-lg">
+                  <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <p class="text-white text-lg font-semibold text-center">تكريم أوائل الطلاب في معاهدهم لسنة 2024</p>
+                  </div>
+                </div>
+              </div>
+          <div class="bg-sky-700 rounded-lg flex justify-center w-full items-center mx-auto text-center flex-col md:flex-row">
+              <div class="  p-5  mx-auto">
+                <video class=" h-56 rounded-lg" controls>
+                    
+                  <source src="./images/cience.mp4" type="video/mp4">
+                 
+                  Your browser does not support the video tag.
+                </video>
+                <p class="mt-2 text-gray-100 text-center">فيديو لبعض الأنشطة لتجارب العلمية</p>
+              </div>
+              <div class="   p-5  mx-auto">
+                <video class=" h-56 rounded-lg" controls>
+                    <source src="./images/videos.mp4" type="video/mp4">
+                  
+                 
+                  Your browser does not support the video tag.
+                </video>
+                <p class="mt-2 text-gray-100 text-center">فيديو لبعض الأنشطة لتجارب العلمية</p>
+              </div>
+
+          </div>
+        
+            
+            </div>
+          </section>
+          
+  
+    
+      <section id="Register" class="bg-gray-200  dark:bg-gray-800 shadow-lg p-8 w-full ">
+        <h1 class="text-2xl font-bold text-center  text-gray-800 dark:text-white mb-6">التسجيل في أكاديمية أروقة</h1>
+        
+        <form class="space-y-4 container mx-auto shadow-2xl p-5">
+          
+          <!-- الاسم الكامل -->
+          <div>
+            <label for="fullName" class="block text-gray-700 dark:text-gray-50 font-medium mb-2">الاسم الكامل</label>
+            <input type="text" id="fullName" name="fullName" placeholder="اكتب اسمك الكامل" 
+            required  class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 outline-none">
+          </div>
+          
+          <!-- البريد الإلكتروني -->
+          <div>
+            <label for="email" class="block text-gray-700 dark:text-gray-50 font-medium mb-2">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" 
+            required  class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 outline-none">
+          </div>
+          
+          <!-- رقم الهاتف -->
+          <div>
+            <label for="phone" class="block text-gray-700 dark:text-gray-50 font-medium mb-2">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" placeholder="0123456789" 
+            required  class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 outline-none">
+          </div>
+          
+          <!-- الصف الدراسي -->
+          <div>
+            <label for="grade" class="block text-gray-700 dark:text-gray-50 font-medium mb-2">الصف الدراسي</label>
+            <select id="grade" name="grade" 
+            required  class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 outline-none">
+              <option value="">اختر الصف</option>
+              <option value="kg">رياض الأطفال</option>
+              <option value="primary">المرحلة الابتدائية</option>
+              <option value="middle">المرحلة الإعدادية</option>
+              <option value="secondary">المرحلة الثانوية</option>
+            </select>
+          </div>
+          
+          <!-- كلمة المرور -->
+          <div>
+            <label for="password" class="block text-gray-700 dark:text-gray-50 font-medium mb-2">كلمة المرور</label>
+            <input type="password" id="password" name="password" placeholder="********" 
+            required  class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 outline-none">
+          </div>
+          
+          <!-- زر التسجيل -->
+          <div class="text-center">
+            <button type="submit" class=" dark:hover:bg-blue-700 w-full bg-blue-500 dark:text-gray-900 dark:bg-blue-400 text-white hover:bg-blue-700 font-bold py-2 rounded-md transition duration-300">
+              تسجيل
+            </button>
+          </div>
+          
+        </form>
+      </section>
+
+
+    <section id="Contact" class="py-16 bg-gray-50 dark:bg-gray-900 text-center">
+        <h2 class="text-3xl font-bold mb-4  text-gray-800 dark:text-white">التواصل معنا</h2>
+        <p class="text-lg max-w-3xl mx-auto dark:text-gray-50">لديك استفسار؟ تواصل معنا وسنكون سعيدين بالإجابة على أسئلتك.</p>
+        <form class="max-w-xl mx-auto mt-8 mb-4 bg-gray-200 p-8 rounded-lg shadow-lg">
+            <div class="mb-4">
+                <label for="message" class="block text-lg font-medium">رسالتك</label>
+                <textarea id="message" class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 dark:text-gray-900 dark:bg-blue-400 text-white py-3 px-6 rounded-full dark:hover:bg-blue-700 hover:bg-blue-700">إرسال</button>
+        </form>
+        
+        <caption class="mb-8">
+           
+            <p class="my-2 dark:text-white text-gray-950 ">للمزيد من المعلومات والتسجيل في البرامج التعليمية، يمكنكم زيارة صفحة الأكاديمية على فيسبوك:</p>
+            <a href="https://www.facebook.com/p/%D8%A3%D8%B1%D9%88%D9%82%D8%A9-Arweqa-Academy-100063690280160/?locale=ar_AR" class="text-[#3B82F6] hover:underline hover:text-sky-400">صفحة أكاديمية أروقة على فيسبوك</a>
+        </caption>
+    </section>
+    
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>جميع الحقوق محفوظة لدي المعتصم بالله أسامة &copy;</p>
+            <div class="flex justify-center gap-6 mt-4">
+                <span class="tracking-wide"> للتواصل مع المطور  &nbsp; <strong>حساباتي على : </strong></span>
+                <a href="https://www.facebook.com/profile.php?id=100053415153320" class="text-[#3B82F6] hover:text-sky-400">
+                    <i class="fab fa-xl fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/moatasem-osama-202378330" class="text-[#3B82F6] hover:text-sky-400">
+                    <i class="fab fa-xl fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/moatasem-osama" class="text-[#3B82F6] hover:text-sky-400">
+                    <i class="fab fa-xl fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <button id="btn" class="w-14 h-1w-14 hidden bg-yellow-700 rounded-full p-4 cursor-pointer fixed bottom-2 right-2 ">
+        <i class="fa fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="src/main.js"></script>
+</body>
+</html>
